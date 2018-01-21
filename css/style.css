@@ -1,27 +1,53 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url(https://images.pexels.com/photos/709732/pexels-photo-709732.jpeg?w=1400&h=970&auto=compress&cs=tinysrgb);
-  background-position: cover; }
+/*
+Error: Invalid CSS after "	width: 45%": expected "{", was ";"
+        on line 11 of sass/style.scss
 
-.container {
-  width: 45%;
-  margin-left: 45%;
-  text-align: left;
-  font-family: 'Lato', sans-serif; }
+6: 	background-image: url(https://images.pexels.com/photos/709732/pexels-photo-709732.jpeg?w=1400&h=970&auto=compress&cs=tinysrgb);
+7: 	background-position: cover;
+8: }
+9: .container {
+10: <<<<<<< HEAD
+11: 	width: 45%;
+12: =======
+13: 	width: 50%;
+14: >>>>>>> devTest2
+15: 	margin-left: 45%;
+16: 	text-align: left;
 
-.verse p, .chorus {
-  padding: 10px 0;
-  line-height: 21px;
-  font-size: 17px; }
-
-h4 {
-  margin: 0 auto;
-  text-transform: uppercase; }
-
-.chorus p {
-  margin-top: 0;
-  margin-bottom: 0; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+sass/style.scss:11
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:677:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"	width: 45%\": expected \"{\", was \";\"\A         on line 11 of sass/style.scss\A \A 6: 	background-image: url(https://images.pexels.com/photos/709732/pexels-photo-709732.jpeg?w=1400&h=970&auto=compress&cs=tinysrgb);\A 7: 	background-position: cover;\A 8: }\A 9: .container {\A 10: <<<<<<< HEAD\A 11: 	width: 45%;\A 12: =======\A 13: 	width: 50%;\A 14: >>>>>>> devTest2\A 15: 	margin-left: 45%;\A 16: 	text-align: left;"; }
