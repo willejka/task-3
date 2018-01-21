@@ -3,16 +3,18 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url(https://images.pexels.com/photos/709732/pexels-photo-709732.jpeg?w=1000&h=750&auto=compress&cs=tinysrgb);
+	background-image: url(https://images.pexels.com/photos/709732/pexels-photo-709732.jpeg?w=1400&h=970&auto=compress&cs=tinysrgb);
+	background-position: cover;
 }
 .container {
 	width: 40%;
-	margin-left: 30%;
+	margin-left: 50%;
 	text-align: left;
 	font-family: 'Lato', sans-serif;
+
 }
-.verse, .chorus {
-	padding: 0 30px;
+.verse p, .chorus {
+	padding: 10px 0;
 	line-height: 21px;
 	font-size: 17px;
 	}
@@ -22,4 +24,5 @@ h4 {
 }
 .chorus p{
 	margin-top: 0;
+	margin-bottom: 0;
 }
